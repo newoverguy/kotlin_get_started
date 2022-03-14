@@ -1,14 +1,18 @@
+import mu.KotlinLogging
 
+private val logger = KotlinLogging.logger {}
 
 fun main(args: Array<String>) {
+
+    logger.info("Boot main function....")
     /*
      * args 옵션을 정리해본다.
      * -Dp=cols값. 범위값은 1~9 사이값.
      */
     // TODO: 2022/03/03  실행옵션을 구현합니다.
     println("Arguments are ${if(args.isEmpty()) "empty." else args.joinToString()}")
-
     /*
+    
      * 애플리케이션 launch message를 보여준다.
      * 이때 로딩중같은 표현을 위해서 coroutine을 적용해본다.
      */
