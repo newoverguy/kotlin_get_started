@@ -15,8 +15,9 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
     implementation("io.github.microutils:kotlin-logging-jvm:2.1.21")
-    implementation("org.slf4j:slf4j-simple:1.7.26")
-    //implementation("io.github.microutils:kotlin-logging:1.12.5")
+    implementation("ch.qos.logback:logback-classic:1.2.11")
+    // implementation("org.slf4j:slf4j-simple:1.7.26")
+
 
 }
 

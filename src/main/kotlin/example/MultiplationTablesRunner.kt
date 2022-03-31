@@ -1,3 +1,4 @@
+import example.module.ArgsValidator
 import mu.KotlinLogging
 
 private val logger = KotlinLogging.logger {}
@@ -11,6 +12,11 @@ fun main(args: Array<String>) {
      */
     // TODO: 2022/03/03  실행옵션을 구현합니다.
     println("Arguments are ${if(args.isEmpty()) "empty." else args.joinToString()}")
+
+    val validator = ArgsValidator(args)
+//    validator.
+
+
     /*
     
      * 애플리케이션 launch message를 보여준다.
